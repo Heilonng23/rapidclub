@@ -19,6 +19,12 @@ export default async function Home({
             </p>
             <SearchForm query={query} />
          </section>
+
+         <section className="section_container">
+            <p className="text-30-semibold">
+               {query ? `Search results for "${query}"` : "Latest Pitches"}
+            </p>
+         </section>
       </>
    );
 }
