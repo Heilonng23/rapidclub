@@ -37,6 +37,11 @@ export const author = defineType({
       defineField({
          name: "image",
          type: "url",
+         validation: (Rule) => Rule.required(),
+      }),
+      defineField({
+         name: "description",
+         type: "text",
       }),
    ],
    preview: {
