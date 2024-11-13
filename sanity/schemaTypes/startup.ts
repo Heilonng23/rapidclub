@@ -32,11 +32,11 @@ export const author = defineType({
       defineField({
          name: "category",
          type: "string",
-         validation: (Rule) => Rule.min(1),
+         validation: (Rule) => Rule.min(1).max(20).required().error("Please enter a category"),
       }),
       defineField({
-         name: "bio",
-         type: "text",
+         name: "image",
+         type: "url",
       }),
    ],
    preview: {
