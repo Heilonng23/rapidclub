@@ -40,8 +40,8 @@ export const author = defineType({
          validation: (Rule) => Rule.required(),
       }),
       defineField({
-         name: "description",
-         type: "text",
+         name: "pitch",
+         type: "markdown",
       }),
    ],
    preview: {
